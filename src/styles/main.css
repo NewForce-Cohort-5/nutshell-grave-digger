@@ -1,0 +1,61 @@
+/*Main Content*/
+.container { padding: 20px; }
+
+
+/*Daily Tasks*/
+
+
+/*Messages List*/
+
+
+/*News List*/
+
+
+/*Events List*/
+.eventsContainer {
+    background-color: seashell;
+    padding: 1px 20px 20px 20px;
+}
+
+.eventList ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.eventListBlock {
+    border: 1px dotted lightsalmon;
+}
+
+.eventListBlock p{
+    margin: 8px 0px;
+}
+
+.eventForm {
+    border: 1px solid salmon;
+    padding: 1px 20px 30px 20px;
+    margin-top: 30px;
+}
+
+.eventNameForm {
+    height: 24px;
+    margin-top: 1px;
+}
+
+.eventDateForm {
+    height: 24px;
+    margin-top: 10px;
+}
+
+.eventLocationForm {
+    height: 24px;
+    margin-top: 10px;
+}
+
+.eventSaveBtn {
+    margin-top: 10px;
+}
+
+
+
+/*Footer*/
+footer { padding: 20px; }
