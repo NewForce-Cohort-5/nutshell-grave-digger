@@ -55,6 +55,13 @@
     margin-top: 10px;
 }
 
+.eventHighlight {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: salmon;
+}
+
 
 
 /*Footer*/

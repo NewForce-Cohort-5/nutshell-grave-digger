@@ -9,9 +9,9 @@ export const EventsList = () => {
     .then(() => {
         let eventsArray = useEvents();
         let eventsHTML = "";
-
-        eventsArray.sort((obj1, obj2) => {
-            return new Date(obj1.date) - new Date(obj2.date)
+        //.sort will sort the list according to date before doing the .forEach method that loops through the array.
+        eventsArray.sort((eventObj1, eventObj2) => {
+            return new Date(eventObj1.date) - new Date(eventObj2.date)
         }).forEach((singleEventObj) => {
             eventsHTML += Event(singleEventObj)
         })
@@ -33,6 +33,19 @@ export const EventsList = () => {
 }
 
 // let sortByDate = events.sort((obj1, obj2) => {
-//     return new Date(obj1.date) - new Date(obj2.date)
-    
+//     return new Date(obj1.date) - new Date(obj2.date) 
 // })
+
+
+ //needs to add the class .eventHighlight to next upcoming event in the div class .eventListBlock
+document.querySelector("")
+let nextEvent = () => {
+   
+    if()
+    let highlight = document.getElementsByClassName("eventListBlock");
+    highlight.classList.add("eventHightlight");
+}
+
+let nextEvent = document.querySelector(".eventListBlock")
+nextEvent.classList.add(".eventHighlight")
+nextEvent()
