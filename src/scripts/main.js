@@ -1,6 +1,5 @@
 import { LoginForm } from "./auth/LoginForm.js"
 import { RegisterForm } from "./auth/RegisterForm.js"
-import { EventsList } from "./events/EventList.js"
 import { Nutshell } from "./Nutshell.js"
 
 
@@ -22,4 +21,6 @@ import { Nutshell } from "./Nutshell.js"
 //     Nutshell()
 // }
 
-EventsList()
+
+//Temporary call:
+Nutshell()

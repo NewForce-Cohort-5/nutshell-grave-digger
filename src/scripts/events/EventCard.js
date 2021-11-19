@@ -4,7 +4,7 @@ export const Event = (event) => {
             <ul>
                 <li>
                     <div class="eventListBlock">
-                        <p><em>Event:</em> ${event.name}</p>
+                        <p class="eventNameHighlight"><em>Event:</em> ${event.name}</p>
                         <p><em>Date:</em> ${new Date(event.date).toLocaleDateString('en-US')}</p>
                         <p><em>Location:</em> ${event.location}</p>
                     </div>

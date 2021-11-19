@@ -1,5 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+
+/*Typography*/
+body,
+button,
+input,
+select,
+textarea {
+	color: #404040;
+	font-family: "Comfortaa", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Patua One", serif;
+  letter-spacing: 2px;
+  padding: 0;
+  margin: 0;
+}
+
+body { 
+	margin: 0;
+}
+
+
 /*Main Content*/
 .container { padding: 20px; }
+.pad10 { padding: 10px; }
+.pad20 { padding: 20px; }
+.marg10 { margin: 10px; }
+.marg20 { margin: 20px; }
+
+button {
+    height: 26px;
+    font-size: 12px;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 4px 8px;
+    margin: 3px;
+}
+
+button:hover {
+    background-color: lightseagreen;
+}
 
 
 /*Daily Tasks*/
@@ -13,17 +58,42 @@
 
 /*Events List*/
 .eventsContainer {
-    background-color: seashell;
+    background-color: rgb(244, 253, 253);
     padding: 1px 20px 20px 20px;
+}
+
+.eventsHdrBox {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 15px 0px 12px 0px;
+}
+
+.eventList {
+    border-left: 3px solid lightgrey;
 }
 
 .eventList ul{
     list-style: none;
     padding-left: 0px;
+    margin: 5px 0px;
+}
+
+.eventList:first-child {
+    font-size: 14px;
+    color: black;
+    background: lightcyan;
+    border-left: 6px solid lightseagreen;
+}
+
+.eventList:nth-child(1) .eventNameHighlight {
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .eventListBlock {
-    border: 1px dotted lightsalmon;
+    border: 1px dotted lightseagreen;
+    padding: 0px 10px 0px 10px
 }
 
 .eventListBlock p{
@@ -31,14 +101,16 @@
 }
 
 .eventForm {
-    border: 1px solid salmon;
-    padding: 1px 20px 30px 20px;
-    margin-top: 30px;
+    border: 1px solid lightseagreen;
+    background-color: whitesmoke;
+    padding: 15px 20px 20px 20px;
+    margin: 10px 30px;
 }
 
 .eventNameForm {
     height: 24px;
-    margin-top: 1px;
+    width: 100%;
+    margin-top: 10px;
 }
 
 .eventDateForm {
@@ -48,6 +120,7 @@
 
 .eventLocationForm {
     height: 24px;
+    width: 100%;
     margin-top: 10px;
 }
 
@@ -55,12 +128,12 @@
     margin-top: 10px;
 }
 
-.eventHighlight {
+/* .eventHighlight {
     font-size: 18px;
     font-weight: bold;
     color: white;
     background: salmon;
-}
+} */
 
 
 

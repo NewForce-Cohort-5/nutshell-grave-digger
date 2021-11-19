@@ -4,7 +4,7 @@ import { EventsList } from "./EventList.js"
 export const EventForm = () => {
     return `
         <section class="eventForm">
-            <h3>Add New Event</h3>
+            <h3>Add New Event:</h3>
             <div>
                 <input type="text" id="event-name" class="eventNameForm" placeholder="Enter Event Name"><br />
                 <input type="date" class="eventDateForm" id="event-date"><br />
@@ -23,7 +23,7 @@ document.querySelector("body").addEventListener("click", clickEvent => {
             name: document.querySelector("#event-name").value,
             location: document.querySelector("#event-location").value
         }
-        console.log(newEvent)
+        // console.log(newEvent)
 
         document.querySelector("#event-date").value = ""
         document.querySelector("#event-name").value = ""
