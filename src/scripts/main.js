@@ -22,5 +22,5 @@ import { Nutshell } from "./Nutshell.js"
 // }
 
 
-//Temporary call:
+//Temporary call to get past login until that is set up:
 Nutshell()

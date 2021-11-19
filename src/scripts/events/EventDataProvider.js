@@ -18,3 +18,22 @@ export const saveEvent = (event) => {
     })
     .then(getEvents)
 }
+
+//Delete Event
+export const deleteEvent = eventId => {
+    return fetch(`http://localhost:8088/events/${eventId}`, {
+        method: "DELETE"
+    })
+    .then(getEvents)
+}
+
+//Edit Event
+export const updateEvent = event => {
+    return fetch(`http://localhost:8088/events/${event.id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(event)
+    })
+}

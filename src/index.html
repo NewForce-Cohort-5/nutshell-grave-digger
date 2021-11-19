@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div class="emptyDivSpacer20 green"></div> 
     <article class="container">
         <!-- <article class="auth">
             <section class="auth--logout"></section>
@@ -18,10 +19,34 @@
         </article> -->
         <article class="dashboard">
             <!-- All your Nutshell are belong here -->
-
-            <div id="events-list"></div>
+            <section class="header">
+                <div class="logoContainer">
+                    <img src="https://media.entertainmentearth.com/assets/images/4ab2522a0fd64a7f99c1e313b75157e5xl.jpg" id="" class="logo" alt="Grave Digger">
+                </div>
+                <div class="welcome">
+                    <div class="welcomeHdr">
+                        <h1>Welcome, ${username}</h1> 
+                        <h2>to Grave Digger Nutshell</h2>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div id="tasks-list"></div>
+                <div id="chat-list"></div>
+            </section>
+            <aside>
+                <div id="events-list"></div>
+                <div id="articles-list"></div>
+            </aside>
         </article>
     </article>
+
+    <div class="emptyDivSpacer100">
+        <!-- Spacer height set in CSS, placed here to allow a buffer between the end of the content and the footer -->
+    </div> 
+    <footer>
+        <p>&copy;2021 Grave Diggers Team &ndash; Cohort-5 &ndash; NewForceWV</p>
+    </footer>
 
     <script src="./scripts/main.js" type="module"></script>
 

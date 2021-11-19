@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=M+PLUS+2:wght@400;600&family=Roboto+Slab:wght@400;600&family=Squada+One&display=swap');
 
 /*Typography*/
 body,
@@ -7,43 +7,67 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-family: "Comfortaa", Arial, sans-serif;
+	font-family: "M PLUS 2", sans-serif;
 	font-size: 14px;
 	line-height: 1.5;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: "Patua One", serif;
+  font-family: "Squada One", serif;
   letter-spacing: 2px;
   padding: 0;
   margin: 0;
 }
 
+h2 {
+    font-size: 24px;
+}
+
 body { 
 	margin: 0;
+    background-image: url('https://www.toledoblade.com/image/2020/03/04/1140x_a10-7_cTC/Grave-Digger18-03-jpg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
 }
 
 
 /*Main Content*/
-.container { padding: 20px; }
-.pad10 { padding: 10px; }
-.pad20 { padding: 20px; }
-.marg10 { margin: 10px; }
-.marg20 { margin: 20px; }
+.container { padding: 20px 20px 20px 20px; }
 
-button {
-    height: 26px;
-    font-size: 12px;
-    background-color: grey;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    padding: 4px 8px;
-    margin: 3px;
+
+/* Header */
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 5px dotted limegreen;
+    border-radius: 10px;
+    padding: 5px 10px 10px;
+    margin-bottom: 20px;
 }
 
-button:hover {
-    background-color: lightseagreen;
+.logo {
+    width: 15vw;
+    height: auto;
+    padding-top: 10px;
+    margin-right: 30px;
+}
+
+.welcomeHdr h1{
+    font-size: 28px;
+    color: indigo;
+    font-family: "Bungee Inline", Impact, 'Arial Narrow Bold', sans-serif;
+    line-height: 1.3;
+}
+
+.welcomeHdr h2{
+    font-size: 24px;
+    color: indigo;
+    font-family: "Bungee Inline", Impact, 'Arial Narrow Bold', sans-serif;
+    line-height: 1.3;
 }
 
 
@@ -58,7 +82,8 @@ button:hover {
 
 /*Events List*/
 .eventsContainer {
-    background-color: rgb(244, 253, 253);
+    background-color: rgb(245, 243, 255);
+    border-radius: 10px;
     padding: 1px 20px 20px 20px;
 }
 
@@ -70,7 +95,7 @@ button:hover {
 }
 
 .eventList {
-    border-left: 3px solid lightgrey;
+    border-left: 3px solid mediumpurple;
 }
 
 .eventList ul{
@@ -82,8 +107,8 @@ button:hover {
 .eventList:first-child {
     font-size: 14px;
     color: black;
-    background: lightcyan;
-    border-left: 6px solid lightseagreen;
+    background: lavender;
+    border-left: 10px solid indigo;
 }
 
 .eventList:nth-child(1) .eventNameHighlight {
@@ -92,19 +117,25 @@ button:hover {
 }
 
 .eventListBlock {
-    border: 1px dotted lightseagreen;
-    padding: 0px 10px 0px 10px
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: row wrap;
+    border-top: 1px dotted indigo;
+    border-right: 1px dotted indigo;
+    border-bottom: 1px dotted indigo;
+    border-radius: 1px 5px 5px 1px;
+    padding: 4px 10px 4px 10px
 }
 
-.eventListBlock p{
-    margin: 8px 0px;
+.eventListing p{
+    margin: 1px 0px;
 }
 
 .eventForm {
-    border: 1px solid lightseagreen;
+    border: 1px solid indigo;
     background-color: whitesmoke;
     padding: 15px 20px 20px 20px;
-    margin: 10px 30px;
+    margin: 10px 30px 20px 30px;
 }
 
 .eventNameForm {
@@ -123,9 +154,70 @@ button:hover {
     width: 100%;
     margin-top: 10px;
 }
-
-.eventSaveBtn {
+/* Events Buttons */
+.eventsHdrBox button {
     margin-top: 10px;
+    height: 26px;
+    font-size: 12px;
+    background-color: indigo;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 4px 8px;
+}
+
+.eventsHdrBox button:hover {
+    background-color: lightgreen;
+    color: black;
+}
+
+.eventFormInputs button {
+    margin-top: 10px;
+    height: 26px;
+    font-size: 12px;
+    background-color: indigo;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 4px 8px;
+}
+
+.eventFormInputs button:hover {
+    background-color: lightgreen;
+    color: black;
+}
+
+.eventFormInputs button {
+    margin-top: 10px;
+    height: 26px;
+    font-size: 12px;
+    background-color: indigo;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 4px 8px;
+}
+
+.eventFormInputs button:hover {
+    background-color: lightgreen;
+    color: black;
+}
+
+.editDelBtns button{
+    height: 26px;
+    font-size: 12px;
+    background-color: lavender;
+    color: dimgray;
+    border: none;
+    border-radius: 3px;
+    text-decoration: underline;
+    border-radius: 3px;
+    padding: 4px 8px;
+}
+
+.editDelBtns button:hover{
+    background-color: dimgray;
+    color: white;
 }
 
 /* .eventHighlight {
@@ -136,6 +228,28 @@ button:hover {
 } */
 
 
-
 /*Footer*/
-footer { padding: 20px; }
+footer { 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: indigo;
+    color: white;
+    border-top: 6px solid limegreen;
+    text-align: center;
+    padding: 20px; 
+}
+
+
+/* Extras */
+.pad10 { padding: 10px; }
+.pad20 { padding: 20px; }
+.marg10 { margin: 10px; }
+.marg20 { margin: 20px; }
+
+.green { background-color: limegreen; }
+
+.emptyDivSpacer20 { height: 20px; }
+
+.emptyDivSpacer100 { height: 100px; }
