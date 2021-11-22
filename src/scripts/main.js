@@ -12,15 +12,15 @@ import { Nutshell } from "./Nutshell.js"
 */
 
 
-// const activeUser = sessionStorage.getItem("activeUser")
+const activeUser = sessionStorage.getItem("activeUser")
 
-// if(!activeUser){
-//     LoginForm()
-//     RegisterForm()
-// } else {
-//     Nutshell()
-// }
+if(!activeUser){
+    LoginForm()
+    RegisterForm()
+} else {
+    Nutshell()
+}
 
 
 //Temporary call to get past login until that is set up:
-Nutshell()
+// Nutshell()

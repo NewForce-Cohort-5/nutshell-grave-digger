@@ -2,7 +2,7 @@ import { getEvents, useEvents } from "./EventDataProvider.js"
 import { Event } from "./EventCard.js"
 import { EventForm } from "./EventForm.js"
 
-const htmlContentTarget = document.querySelector("#events-list")
+// const htmlContentTarget = document.querySelector("#events-list")
 
 //Add Event button triggers the Add Event Form
 document.querySelector("body").addEventListener("click", clickEvent => {
@@ -19,14 +19,22 @@ export const EventsList = (hiddenForm = "") => {
     .then(() => {
         let eventsArray = useEvents();
         let eventsHTML = "";
+        let userEvents = eventsArray.filter(singleEvent => {
+            const userId = sessionStorage.getItem('activeUser')
+            console.log(userId)
+            if(singleEvent.userId === +userId) {
+                return singleEvent.userId
+            }
+        })
+
         //.sort will sort the list according to date before doing the .forEach method that loops through the array.
-        eventsArray.sort((eventObj1, eventObj2) => {
+        userEvents.sort((eventObj1, eventObj2) => {
             return new Date(eventObj1.date) - new Date(eventObj2.date)
         }).forEach((singleEventObj) => {
             eventsHTML += Event(singleEventObj)
         })
 
-        htmlContentTarget.innerHTML  = `
+        document.querySelector("#events-list").innerHTML  = `
             <div class="eventsContainer">
                 <div class="eventsHdrBox">
                     <h2>Events</h2>

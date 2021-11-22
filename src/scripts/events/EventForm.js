@@ -20,6 +20,7 @@ document.querySelector("body").addEventListener("click", clickEvent => {
     if (clickEvent.target.id === "save-event") {
 
         const newEvent = {
+            userId: +sessionStorage.getItem("activeUser"),
             date: document.querySelector("#event-date").value,
             name: document.querySelector("#event-name").value,
             location: document.querySelector("#event-location").value

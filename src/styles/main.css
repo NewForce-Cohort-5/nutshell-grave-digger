@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=M+PLUS+2:wght@400;600&family=Roboto+Slab:wght@400;600&family=Squada+One&display=swap');
 
 /*Typography*/
-body,
-button,
-input,
-select,
-textarea {
+body, button, input, select, textarea {
 	color: #404040;
 	font-family: "M PLUS 2", sans-serif;
 	font-size: 12px;
@@ -47,16 +43,24 @@ body {
 
 
 /* Welcome Header */
-.header {
+.headerContainer {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
     background-color: white;
     border: 5px dotted limegreen;
     border-radius: 10px;
     padding: 5px 10px 10px;
     margin-bottom: 20px;
+}
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 .logo {
@@ -78,6 +82,23 @@ body {
     color: indigo;
     font-family: "Bungee Inline", Impact, 'Arial Narrow Bold', sans-serif;
     line-height: 1.3;
+}
+
+.logoutBtn button {
+    height: 30px;
+    font-size: 14px;
+    background-color: lightgreen;
+    color: indigo;
+    border: 1px solid indigo;
+    border-radius: 4px;
+    padding: 2px 8px 5px;
+    margin: 1px 10px 10px;
+}
+
+.logoutBtn button:hover {
+    background-color: indigo;
+    color: white;
+    border-color: lightgreen;
 }
 
 
