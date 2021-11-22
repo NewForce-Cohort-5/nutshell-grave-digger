@@ -19,9 +19,8 @@ h1,h2,h3,h4,h5,h6 {
   margin: 0;
 }
 
-h2 {
-    font-size: 24px;
-}
+h2 { font-size: 24px; }
+h3 { font-size: 17px; }
 
 body { 
 	margin: 0;
@@ -38,7 +37,7 @@ body {
 
 .tasksChatContainer {
     background-color: lightgrey;
-    width: 38%;
+    width: 39%;
 }
 .eventsArticlesContainer {
     display: flex;
@@ -164,7 +163,7 @@ body {
     border: 1px solid indigo;
     background-color: whitesmoke;
     padding: 15px 20px 20px 20px;
-    margin: 10px 30px 20px 30px;
+    margin: 10px 1px 20px 1px;
 }
 
 .eventNameForm {
@@ -271,7 +270,6 @@ body {
     background-color: dimgray;
     color: white;
 }
-
 
 .editDelBtns-editForm {
     width: 25%;
