@@ -25,19 +25,21 @@
                 </div>
                 <div class="welcome">
                     <div class="welcomeHdr">
-                        <h1>Welcome, ${username}</h1> 
+                        <h1>Welcome, Username</h1> 
                         <h2>to Grave Digger Nutshell</h2>
                     </div>
                 </div>
             </section>
-            <section>
-                <div id="tasks-list"></div>
-                <div id="chat-list"></div>
+            <section class="flex">
+                <section class="tasksChatContainer">
+                    <div id="tasks-list">tasks</div>
+                    <div id="chat-list">chat</div>
+                </section>
+                <aside class="eventsArticlesContainer">
+                    <div id="events-list"></div>
+                    <div id="articles-list">articles</div>
+                </aside>
             </section>
-            <aside>
-                <div id="events-list"></div>
-                <div id="articles-list"></div>
-            </aside>
         </article>
     </article>
 

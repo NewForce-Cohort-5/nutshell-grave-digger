@@ -9,8 +9,8 @@ export const Event = (event) => {
                 <li>
                     <div class="eventListBlock">
                         <div class="eventListing">
-                            <p class="eventNameHighlight"><em>Event:&nbsp;</em> ${event.name}</p>
-                            <p><em>Date:&nbsp;</em> ${new Date(event.date).toLocaleDateString('en-US', {timeZone: 'UTC'})}</p>
+                            <p class="eventNameHighlight"><strong>${event.name}</strong></p>
+                            <p>${new Date(event.date).toLocaleDateString('en-US', {timeZone: 'UTC'})}</p>
                             <p><em>Location:&nbsp;</em> ${event.location}</p>
                         </div>
                         <div class="editDelBtns">

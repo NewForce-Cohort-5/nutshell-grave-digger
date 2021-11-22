@@ -8,7 +8,7 @@ select,
 textarea {
 	color: #404040;
 	font-family: "M PLUS 2", sans-serif;
-	font-size: 14px;
+	font-size: 12px;
 	line-height: 1.5;
 }
 
@@ -34,9 +34,20 @@ body {
 
 /*Main Content*/
 .container { padding: 20px 20px 20px 20px; }
+.flex { display: flex; justify-content: space-between; }
+
+.tasksChatContainer {
+    background-color: lightgrey;
+    width: 38%;
+}
+.eventsArticlesContainer {
+    display: flex;
+    background-color: lightgrey;
+    width: 60%;
+}
 
 
-/* Header */
+/* Welcome Header */
 .header {
     display: flex;
     flex-flow: row wrap;
@@ -57,14 +68,14 @@ body {
 }
 
 .welcomeHdr h1{
-    font-size: 28px;
+    font-size: 4.5vw;
     color: indigo;
     font-family: "Bungee Inline", Impact, 'Arial Narrow Bold', sans-serif;
     line-height: 1.3;
 }
 
 .welcomeHdr h2{
-    font-size: 24px;
+    font-size: 3.5vw;
     color: indigo;
     font-family: "Bungee Inline", Impact, 'Arial Narrow Bold', sans-serif;
     line-height: 1.3;
@@ -72,15 +83,33 @@ body {
 
 
 /*Daily Tasks*/
+#tasks-list {
+    background-color: rgb(245, 243, 255);
+    margin: 10px
+}
 
 
 /*Messages List*/
+#chat-list {
+    background-color: rgb(245, 243, 255);
+    margin: 10px
+}
 
 
 /*News List*/
+#articles-list {
+    background-color: rgb(245, 243, 255);
+    margin: 10px;
+    width: 48%;
+}
 
 
 /*Events List*/
+#events-list {
+    margin: 10px;
+    width: 48%;
+}
+
 .eventsContainer {
     background-color: rgb(245, 243, 255);
     border-radius: 10px;
@@ -94,7 +123,7 @@ body {
     padding: 15px 0px 12px 0px;
 }
 
-.eventList {
+.eventList{
     border-left: 3px solid mediumpurple;
 }
 
@@ -154,6 +183,23 @@ body {
     width: 100%;
     margin-top: 10px;
 }
+
+.eventNameForm-edit {
+    height: 24px;
+    width: 80%;
+}
+
+.eventDateForm-edit {
+    height: 24px;
+    width: 81.45%;
+}
+
+.eventLocationForm-edit {
+    height: 24px;
+    width: 80%;
+}
+
+
 /* Events Buttons */
 .eventsHdrBox button {
     margin-top: 10px;
@@ -179,7 +225,7 @@ body {
     color: white;
     border: none;
     border-radius: 3px;
-    padding: 4px 8px;
+    padding: 2px 8px;
 }
 
 .eventFormInputs button:hover {
@@ -203,22 +249,53 @@ body {
     color: black;
 }
 
+.editDelBtns {
+    width: 25%;
+}
+
 .editDelBtns button{
     height: 26px;
-    font-size: 12px;
-    background-color: lavender;
+    font-size: 11px;
+    line-height: 1;
+    background-color: rgb(218, 218, 245);
     color: dimgray;
     border: none;
     border-radius: 3px;
-    text-decoration: underline;
+    text-decoration: none;
     border-radius: 3px;
-    padding: 4px 8px;
+    padding: 1px 4px;
+    margin: 2px;
 }
 
 .editDelBtns button:hover{
     background-color: dimgray;
     color: white;
 }
+
+
+.editDelBtns-editForm {
+    width: 25%;
+}
+
+.editDelBtns-editForm button{
+    height: 26px;
+    font-size: 11px;
+    line-height: 1;
+    background-color: rgb(138, 72, 185);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 1px 4px;
+    margin: 2px;
+}
+
+.editDelBtns-editForm button:hover{
+    background-color: lightgreen;
+    color: black;
+}
+
 
 /* .eventHighlight {
     font-size: 18px;

@@ -36,4 +36,5 @@ export const updateEvent = event => {
         },
         body: JSON.stringify(event)
     })
+    .then(getEvents)
 }
