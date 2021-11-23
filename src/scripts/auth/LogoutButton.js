@@ -17,6 +17,7 @@ eventHub.addEventListener("click", (eventObject) => {
         document.querySelector(".dashboard").innerHTML = ""
 
         // Reprint the login and register form
+        location.reload() //refreshes the page or sumthin
         LoginForm()
         RegisterForm()
     }
