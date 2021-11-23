@@ -1,9 +1,10 @@
 import {LogOutButton} from "./auth/LogoutButton.js"
-import { articleList } from "./newsArticles/ArticleList.js"
+import { EventsList } from "./events/EventList.js"
+import { Header } from "./hdr/header.js"
 
 export const Nutshell = () => {
-  articleList()
-
+Header()
     LogOutButton()
       // Render all your UI components here
+    EventsList()
 }
