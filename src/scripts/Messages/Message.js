@@ -13,7 +13,7 @@ export const messages = (messageObject) => {
     </section>`
 }
 
-const eventHub = document.querySelector(".messageListContainer")
+const eventHub = document.querySelector("#chat-list")
 eventHub.addEventListener("click", (eventObject) => {
 
     const noteId = +eventObject.target.id.split("--")[1]

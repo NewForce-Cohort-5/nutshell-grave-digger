@@ -3,7 +3,7 @@ import { Message } from "./MessageCard.js"
 import {MessageForm} from "./MessageForm.js"
 import { getUsers, useUsers } from "../auth/UserProvider.js" 
 
-const contentTarget = document.querySelector(".print-list")
+const contentTarget = document.querySelector("#chat-list")
 
 export const MessageList = () => {
   getMessage()

@@ -1,7 +1,7 @@
 import { saveMessage } from "./MessageProvider.js"
 import { MessageList } from "./MessageList.js"
 
-const contentTarget = document.querySelector(".print-list")
+const contentTarget = document.querySelector("#chat-list")
 
 // Handle browser-generated click event in component
 document.querySelector("body").addEventListener("click", clickEvent => {

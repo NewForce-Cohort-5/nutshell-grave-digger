@@ -3,7 +3,7 @@ import { updateMessage} from "./MessageProvider.js"
 import { MessageList } from "./MessageList.js"
 
 // We're going to print the edit form where the "add note" form usually goes. We could move it around on the page by changing our content target.
-const contentTarget = document.querySelector(".messageFormContainer")
+const contentTarget = document.querySelector("#chat-list")
 
 export const MessageEditForm = (messageId) => {
     // Give this component access to our application's notes state
