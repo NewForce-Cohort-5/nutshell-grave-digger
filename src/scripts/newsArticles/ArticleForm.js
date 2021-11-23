@@ -16,7 +16,7 @@ export const articleForm = () => {
     `
 }
 
-const contentTarget = document.querySelector(".dashboard")
+const contentTarget = document.querySelector("#articles-list")
 
 contentTarget.addEventListener("click", (clickEvent) => {
     if (clickEvent.target.id === "saveArticle") {

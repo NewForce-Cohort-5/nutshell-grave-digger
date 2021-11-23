@@ -34,7 +34,7 @@ export const articleList = () => {
         userArticle.forEach(articleObject => {
                 articleHTML += articleCard(articleObject)
             })
-            document.querySelector(".article-container").innerHTML = `
+            document.querySelector("#articles-list").innerHTML = `
                 ${articleForm()}
                 <h2>All of your favorite articles!</h2>
                 ${articleHTML}
