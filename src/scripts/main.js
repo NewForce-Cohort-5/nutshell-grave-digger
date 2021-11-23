@@ -1,7 +1,6 @@
 import { LoginForm } from "./auth/LoginForm.js"
 import { RegisterForm } from "./auth/RegisterForm.js"
 import { Nutshell } from "./Nutshell.js"
-import { MessageList } from "./Messages/MessageList.js"
 
 
 /*
@@ -22,4 +21,6 @@ if(!activeUser){
     Nutshell()
 }
 
-MessageList()
+
+//Temporary call to get past login until that is set up:
+// Nutshell()
