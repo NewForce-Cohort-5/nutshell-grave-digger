@@ -36,7 +36,7 @@ document.querySelector("body").addEventListener("click", clickEvent => {
     }
     
     else if(clickEvent.target.id.startsWith("cancel-changes")){
-        console.log("changes cancelled")
+        // console.log("changes cancelled")
         EventsList()
     }
 })
