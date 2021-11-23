@@ -20,3 +20,7 @@ if(!activeUser){
 } else {
     Nutshell()
 }
+
+
+//Temporary call to get past login until that is set up:
+// Nutshell()
