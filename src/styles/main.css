@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=M+PLUS+2:wght@400;600&family=Roboto+Slab:wght@400;600&family=Squada+One&display=swap');
 
-/*Typography*/
+/*---------Typography---------*/
 body, button, input, select, textarea {
 	color: #404040;
 	font-family: "M PLUS 2", sans-serif;
@@ -16,7 +16,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h2 { font-size: 24px; }
-h3 { font-size: 17px; }
+h3 { font-size: 19px; }
+h4 { font-size: 16px; }
 
 body { 
 	margin: 0;
@@ -27,22 +28,22 @@ body {
 }
 
 
-/*Main Content*/
+/*---------Main Content---------*/
 .container { padding: 20px 20px 20px 20px; }
+
 .flex { display: flex; justify-content: space-between; }
 
 .tasksChatContainer {
-    background-color: lightgrey;
     width: 39%;
 }
+
 .eventsArticlesContainer {
     display: flex;
-    background-color: lightgrey;
     width: 60%;
 }
 
 
-/* Welcome Header */
+/*--------- Welcome Header ---------*/
 .headerContainer {
     display: flex;
     flex-flow: row wrap;
@@ -102,32 +103,212 @@ body {
 }
 
 
-/*Daily Tasks*/
+/*---------Daily Tasks---------*/
 #tasks-list {
     background-color: rgb(245, 243, 255);
-    margin: 10px
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 20px;
+}
+
+#Task-list button{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    height: 26px;
+    font-size: 12px;
+    background-color: indigo;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 4px 8px;
+}
+
+#Task-list button:hover {
+    background-color: lightgreen;
+    color: black;
+}
+
+#saveButton {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 26px;
+    font-size: 12px;
+    background-color: indigo;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 4px 8px;
+}
+
+#saveButton:hover {
+    background-color: lightgreen;
+    color: black;
+}
+
+#task-form {
+    margin-bottom: 5px;
+}
+
+.task-card {
+    margin-top: 5px;
+}
+
+.task-card p {
+    margin: 0px 0px 5px;
+    font-size: 13px;
+}
+
+h4.taskName{
+    font-family: "M PLUS 2", sans-serif;
+    font-size: 15px;
+    letter-spacing: normal;
+    margin-bottom: 5px;
+    margin-top: 10px;
 }
 
 
-/*Messages List*/
+/*---------Messages List---------*/
 #chat-list {
     background-color: rgb(245, 243, 255);
-    margin: 10px
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+}
+
+.messageCard {
+    margin: 10px;
+}
+
+.messageText {
+    font-size: 3.5vw;
+    color: indigo;
+    font-family: "Bungee Inline", Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+#message-text {
+    margin-bottom: 1px;
+}
+
+.form-control {
+    margin-top: 5px;
+}
+
+.list-group-item button {
+    height: 26px;
+    font-size: 11px;
+    line-height: 1;
+    background-color: rgb(212, 212, 253);
+    color: indigo;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 1px 4px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.list-group-item button:hover {
+    background-color: dimgray;
+    color: white;
+}
+
+#chat-list h2 {
+    margin-top: 5px;
+}
+
+.list-group-item h4 {
+    font-family: "M PLUS 2", sans-serif;
+    font-size: 14px;
+    letter-spacing: normal;
+    font-weight: normal;
+    margin-top: 1px;
+}
+
+#saveMessage {
+    display: block;
+    height: 26px;
+    font-size: 12px;
+    background-color: indigo;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 4px 8px;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 
-/*News List*/
+/*---------News List---------*/
 #articles-list {
     background-color: rgb(245, 243, 255);
-    margin: 10px;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
     width: 48%;
 }
 
+.form-control {
+    margin-bottom: 5px;
+}
 
-/*Events List*/
+#articles-list h2 {
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+#articles-list h3 {
+    font-family: "M PLUS 2", sans-serif;
+    font-size: 15px;
+    letter-spacing: normal;
+    margin-bottom: 4px;
+}
+
+#articles-list p {
+    margin: 0px 0px 5px;
+    font-size: 14px;
+}
+
+#articles-list button{
+    height: 26px;
+    font-size: 11px;
+    line-height: 1;
+    background-color: rgb(212, 212, 253);
+    color: indigo;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 1px 4px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+#articles-list button:hover{
+    background-color: dimgray;
+    color: white;
+}
+
+#article-input-and-save button {
+    margin-bottom: 15px;
+    height: 26px;
+    font-size: 12px;
+    background-color: indigo;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 4px 8px;
+}
+
+#article-input-and-save button:hover {
+    background-color: lightgreen;
+    color: black;
+}
+
+
+/*---------Events List---------*/
 #events-list {
-    margin: 10px;
+    margin-right: 10px;
     width: 48%;
+    
 }
 
 .eventsContainer {
@@ -220,7 +401,7 @@ body {
 }
 
 
-/* Events Buttons */
+/*--------- Events Buttons ---------*/
 .eventsHdrBox button {
     margin-top: 10px;
     height: 26px;
@@ -277,8 +458,8 @@ body {
     height: 26px;
     font-size: 11px;
     line-height: 1;
-    background-color: rgb(218, 218, 245);
-    color: dimgray;
+    background-color: rgb(212, 212, 253);
+    color: indigo;
     border: none;
     border-radius: 3px;
     text-decoration: none;
@@ -316,15 +497,15 @@ body {
 }
 
 
-/* .eventHighlight {
+/*--------- .eventHighlight {
     font-size: 18px;
     font-weight: bold;
     color: white;
     background: salmon;
-} */
+} ---------*/
 
 
-/*Footer*/
+/*---------Footer---------*/
 footer { 
     position: fixed;
     left: 0;
@@ -338,7 +519,7 @@ footer {
 }
 
 
-/* Extras */
+/*--------- Extras ---------*/
 .pad10 { padding: 10px; }
 .pad20 { padding: 20px; }
 .marg10 { margin: 10px; }

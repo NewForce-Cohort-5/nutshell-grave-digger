@@ -15,7 +15,7 @@ export const task = (singleTaskObject) => {
     
     <h4 class="taskName">${singleTaskObject.taskName}</h4>
     <p class="task">${singleTaskObject.dateToComplete}</p>   
-    <input id="completed--${singleTaskObject.id}" type="checkbox"><br></br> 
+    <p>Completed: <input id="completed--${singleTaskObject.id}" type="checkbox"></p>
    
 
     
