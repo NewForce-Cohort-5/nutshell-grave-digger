@@ -29,7 +29,7 @@ export const deleteArticle = (deleteArt) => {
     })
 }
 
-export const updateNote = (editArt) => {
+export const updateArticle = (editArt) => {
 
     return fetch(`http://localhost:8088/articles/${editArt.id}`, {
         method: "PUT",

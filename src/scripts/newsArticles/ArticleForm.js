@@ -43,11 +43,8 @@ contentTarget.addEventListener("click", (clickEvent) => {
     }
 })
 
-
-const eventHub = document.querySelector(".dashboard")
-
-eventHub.addEventListener("click", (deleteEvent) => {
-    if(deleteEvent.target.id.startsWith("deleteNote")) {
+document.querySelector(".dashboard").addEventListener("click", (deleteEvent) => {
+    if(deleteEvent.target.id.startsWith("deleteArticle")) {
         const idToDelete = deleteEvent.target.id.split("--")[1]
         console.log(idToDelete)
 
@@ -56,7 +53,7 @@ eventHub.addEventListener("click", (deleteEvent) => {
     }
 })
 
-eventHub.addEventListener("click", (editObject) => {
+document.querySelector(".dashboard").addEventListener("click", (editObject) => {
     if (editObject.target.id.startsWith("editArticle")) {
         const articleId = +editObject.target.id.split("--")[1]
         articleEdit(articleId)

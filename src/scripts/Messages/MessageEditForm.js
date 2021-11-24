@@ -18,7 +18,7 @@ export const MessageEditForm = (messageId) => {
         <h2>Edit Message</h2>
         <input type="date" id="message-date" value="${messageWeWantToEdit.dateOfMessage}" />
         <input type="text" value="${messageWeWantToEdit.messageText}" id="message-text" />
-        <input type="text" value="${messageWeWantToEdit.chatUser}" id="message - chatUser" /> // this was "note-suspect"
+        <input type="text" value="${messageWeWantToEdit.chatUser}" id="message - chatUser" />
         <button id="saveNoteChanges-${messageId}">Save Changes</button>
     `
 }
