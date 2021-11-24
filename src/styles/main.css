@@ -133,7 +133,7 @@ body {
     margin-bottom: 1px;
 }
 
-.list-group-item {
+.form-control {
     margin-top: 5px;
 }
 
@@ -141,7 +141,7 @@ body {
     height: 26px;
     font-size: 11px;
     line-height: 1;
-    background-color: rgb(184, 184, 246);
+    background-color: rgb(212, 212, 253);
     color: indigo;
     border: none;
     border-radius: 3px;
@@ -166,7 +166,7 @@ body {
     font-size: 14px;
     letter-spacing: normal;
     font-weight: normal;
-    margin-top: 10px;
+    margin-top: 1px;
 }
 
 #saveMessage {
@@ -216,7 +216,7 @@ body {
     height: 26px;
     font-size: 11px;
     line-height: 1;
-    background-color: rgb(184, 184, 246);
+    background-color: rgb(212, 212, 253);
     color: indigo;
     border: none;
     border-radius: 3px;
@@ -403,7 +403,7 @@ body {
     height: 26px;
     font-size: 11px;
     line-height: 1;
-    background-color: rgb(184, 184, 246);
+    background-color: rgb(212, 212, 253);
     color: indigo;
     border: none;
     border-radius: 3px;
