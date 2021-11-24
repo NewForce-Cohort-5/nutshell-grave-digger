@@ -1,6 +1,6 @@
 import {Nutshell} from "../Nutshell.js"
 const contentTarget = document.querySelector(".auth--login")
-const eventHub = document.querySelector(".container")
+const eventHub = document.querySelector("#container")
 
 // When the user clicks the login button
 eventHub.addEventListener("click", e => {
