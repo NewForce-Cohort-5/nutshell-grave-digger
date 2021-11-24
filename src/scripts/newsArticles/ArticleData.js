@@ -28,3 +28,15 @@ export const deleteArticle = (deleteArt) => {
     method: "DELETE"
     })
 }
+
+export const updateNote = (editArt) => {
+
+    return fetch(`http://localhost:8088/articles/${editArt.id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(editArt)
+    })
+
+}
