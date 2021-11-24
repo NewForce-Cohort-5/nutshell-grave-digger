@@ -27,6 +27,9 @@ body {
     background-color: white;
 }
 
+.auth {
+    margin: 10px 0px 30px;
+}
 
 /*---------Main Content---------*/
 .container { padding: 20px 20px 20px 20px; }
@@ -166,13 +169,18 @@ h4.taskName{
     margin-top: 10px;
 }
 
-
-/*---------Messages List---------*/
-#chat-list {
+.boxFrame{
     background-color: rgb(245, 243, 255);
     border-radius: 10px;
     padding: 20px 20px 20px 20px;
 }
+
+/*---------Messages List---------*/
+/* #chat-list {
+    background-color: rgb(245, 243, 255);
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+} */
 
 .messageCard {
     margin: 10px;
@@ -237,14 +245,41 @@ h4.taskName{
     margin-bottom: 10px;
 }
 
+.messageList-edit button{
+    margin-bottom: 15px;
+    margin-top: 10px;
+    height: 26px;
+    font-size: 12px;
+    background-color: indigo;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 4px 8px;
+}
+
+.messageList-edit button:hover {
+    background-color: lightgreen;
+    color: black;
+}
+
+.messageList-edit h2 {
+    font-family: "M PLUS 2", sans-serif;
+    font-size: 14px;
+    letter-spacing: normal;
+    margin-top: 1px;
+}
+#message-text-edit {
+    margin-top: 5px;
+}
+
 
 /*---------News List---------*/
-#articles-list {
+/* #articles-list {
     background-color: rgb(245, 243, 255);
     border-radius: 10px;
     padding: 20px 20px 20px 20px;
     width: 48%;
-}
+} */
 
 .form-control {
     margin-bottom: 5px;

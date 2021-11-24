@@ -35,6 +35,7 @@ document.querySelector("#events-list").addEventListener("click", (event) => {
     if(event.target.id.startsWith("saveEventChanges")){
 
         const editedEvent = {
+            userId: +sessionStorage.getItem("activeUser"),
             id: +document.querySelector("#event-ID").value,
             name: document.querySelector("#event-name").value,
             date: document.querySelector("#event-date").value,

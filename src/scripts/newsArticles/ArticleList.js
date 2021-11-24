@@ -33,10 +33,12 @@ export const articleList = () => {
                 articleHTML += articleCard(articleObject)
             })
             document.querySelector("#articles-list").innerHTML = `
+            <div class="boxFrame">
                 ${articleForm()}
                 <h2>All of your favorite articles!</h2>
                 ${articleHTML}
-                `
+            </div>
+            `
         })
 
 }

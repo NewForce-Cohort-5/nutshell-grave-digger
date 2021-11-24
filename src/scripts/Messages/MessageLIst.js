@@ -29,9 +29,11 @@ export const MessageList = () => {
     // });
 
     contentTarget.innerHTML = `
+    <div class="boxFrame">
     ${MessageForm()}
     <h2>Messages</h2>
     ${messageHTML}
+    </div>
     `
 
   });
