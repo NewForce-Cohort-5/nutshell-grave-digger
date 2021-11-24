@@ -17,7 +17,7 @@ export const TaskList = () => {
         }
     })
 
-        contentTarget.innerHTML = `<h4 class="taskheading">My To Do List </h4>
+        contentTarget.innerHTML = `<h2 class="taskheading">My To Do List </h2>
 
         <button id= "NewTask">New Task</button>`
         contentTarget.innerHTML += userTask.map(singleTaskObject => {

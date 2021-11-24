@@ -111,6 +111,61 @@ body {
     margin-bottom: 20px;
 }
 
+#Task-list button{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    height: 26px;
+    font-size: 12px;
+    background-color: indigo;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 4px 8px;
+}
+
+#Task-list button:hover {
+    background-color: lightgreen;
+    color: black;
+}
+
+#saveButton {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 26px;
+    font-size: 12px;
+    background-color: indigo;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 4px 8px;
+}
+
+#saveButton:hover {
+    background-color: lightgreen;
+    color: black;
+}
+
+#task-form {
+    margin-bottom: 5px;
+}
+
+.task-card {
+    margin-top: 5px;
+}
+
+.task-card p {
+    margin: 0px 0px 5px;
+    font-size: 13px;
+}
+
+h4.taskName{
+    font-family: "M PLUS 2", sans-serif;
+    font-size: 15px;
+    letter-spacing: normal;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
 
 /*---------Messages List---------*/
 #chat-list {
@@ -192,7 +247,7 @@ body {
 }
 
 .form-control {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 #articles-list h2 {
