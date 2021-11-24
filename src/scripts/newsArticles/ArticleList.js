@@ -9,9 +9,7 @@ export const articleList = () => {
     getArticle()
         .then(() => {
             let articleArray = useArticle()
-
             let articleHTML = ""
-
     
          let userArticle = articleArray.filter(singleEvent => {
                const userId = sessionStorage.getItem('activeUser')

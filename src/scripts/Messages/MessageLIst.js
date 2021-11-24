@@ -14,6 +14,7 @@ export const MessageList = () => {
     let allUsers = useUsers()
     let messageHTML = "";
     allTheMessages.forEach((singleMessage) => {
+      //?
      const loginUserId = sessionStorage.getItem("activeUser")
       // let messageAuthor = allUsers.find( singleUser => singleUser.id === singleMessage.userId)
       let messageAuthor = allUsers.find( singleUser => singleUser.id === singleMessage.userId)

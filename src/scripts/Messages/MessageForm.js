@@ -4,7 +4,7 @@ import { MessageList } from "./MessageList.js"
 const contentTarget = document.querySelector("#chat-list")
 
 // Handle browser-generated click event in component
-document.querySelector("body").addEventListener("click", clickEvent => {
+contentTarget.addEventListener("click", clickEvent => {
     if (clickEvent.target.id === "saveMessage") {
 
         const newMessage = {
@@ -34,5 +34,5 @@ export const MessageForm = () => {
     `
 }
 
-const eventHub = document.querySelector(".contentContainer")
+// const eventHub = document.querySelector(".contentContainer")
 

@@ -24,14 +24,14 @@ export const saveMessage = (message) => {
     .then(getMessage)
 }
 
-export const updateMessage = message => {
+export const updateMessage = messageUp => {
 
-    return fetch(`http://localhost:8088/messages/${message.id}`, {
+    return fetch(`http://localhost:8088/messages/${messageUp.id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify(message)
+        body: JSON.stringify(messageUp)
     })
 
 }
