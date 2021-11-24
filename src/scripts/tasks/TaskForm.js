@@ -11,8 +11,8 @@ export const TaskForm =() => {
        <input id="taskName" type="text" placeholder="taskName">
        <input class="form-control" type="date" id="dateToComplete">
            
-       <label for="completeLabel">Completed:</label>
-       <input id="completed" type="checkbox"><br>
+       <span style="white-space: nowrap;"><label for="completeLabel">Completed:</label>
+       <input id="completed" type="checkbox"></span><br>
         <button id="saveButton">Add Task</button>
    </section>
    `
