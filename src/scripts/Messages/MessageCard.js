@@ -1,3 +1,5 @@
+import { MessageEditForm } from "./MessageEditForm.js"
+
 export const Message = (messageObject, userObject) => {
     return `
     <div class="col-sm-3 border border-dark m-3 list-group-item">
@@ -12,7 +14,7 @@ const eventhub = document.querySelector(".container")
 eventhub.addEventListener("click", (eventObject) => {
 
    const noteId = +eventObject.target.id.split("--")[1]
-   messageEditForm(messages);
+   MessageEditForm(noteId);
 })
 
 

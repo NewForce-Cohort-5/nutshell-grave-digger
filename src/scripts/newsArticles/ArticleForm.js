@@ -1,5 +1,6 @@
 import { articleList } from "./ArticleList.js";
 import { saveArticle, deleteArticle } from "./ArticleData.js";
+import { articleEdit } from "./ArticleEdit.js";
 // import { articleCard } from "./ArticleCard.js";
 
 
@@ -43,9 +44,9 @@ contentTarget.addEventListener("click", (clickEvent) => {
 })
 
 
-const contentTargetDelete = document.querySelector(".dashboard")
+const eventHub = document.querySelector(".dashboard")
 
-contentTargetDelete.addEventListener("click", (deleteEvent) => {
+eventHub.addEventListener("click", (deleteEvent) => {
     if(deleteEvent.target.id.startsWith("deleteNote")) {
         const idToDelete = deleteEvent.target.id.split("--")[1]
         console.log(idToDelete)
@@ -55,4 +56,10 @@ contentTargetDelete.addEventListener("click", (deleteEvent) => {
     }
 })
 
+eventHub.addEventListener("click", (editObject) => {
+    if (editObject.target.id.startsWith("editArticle")) {
+        const articleId = +editObject.target.id.split("--")[1]
+        articleEdit(articleId)
+    }
+})
    
