@@ -22,6 +22,7 @@ document.querySelector("#events-list").addEventListener("click", (event) => {
     if(event.target.id.startsWith("saveArticle")){
 
         const editedArticle = {
+            // userId: +sessionStorage.getItem("activeUser"),
             time: timeStamp,
             title: document.querySelector("#article-title").value,
             synopsis: document.querySelector("#article-synopsis").value,
